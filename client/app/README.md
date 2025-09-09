@@ -1,12 +1,71 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# DjangoReactCRUD
 
-Currently, two official plugins are available:
+This project is a full-stack CRUD (Create, Read, Update, Delete) application using Django for the backend and React (with Vite) for the frontend.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Modern React frontend built with Vite
+- RESTful API backend powered by Django
+- CRUD operations for managing data
+- Responsive UI
 
-## Expanding the ESLint configuration
+## Project Structure
+```
+app/
+  eslint.config.js
+  index.html
+  package.json
+  README.md
+  vite.config.js
+  public/
+	 vite.svg
+  src/
+	 App.css
+	 App.jsx
+	 index.css
+	 main.jsx
+	 assets/
+		react.svg
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+### Prerequisites
+- Node.js & npm
+- Python & Django
+
+### Frontend Setup
+1. Navigate to the `app` directory:
+	```pwsh
+	cd app
+	```
+2. Install dependencies:
+	```pwsh
+	npm install
+	```
+3. Start the development server:
+	```pwsh
+	npm run dev
+	```
+
+### Backend Setup
+1. Set up your Django backend in a separate directory (not included here).
+2. Run Django migrations and start the server:
+	```pwsh
+	python manage.py migrate
+	python manage.py runserver
+	```
+
+### Connecting Frontend & Backend
+- Update API endpoints in your React code to match your Django backend URLs.
+
+## Scripts
+- `npm run dev` — Start Vite development server
+- `npm run build` — Build for production
+- `npm run lint` — Run ESLint
+
+## License
+MIT
+
+## Author
+Your Name
